@@ -15,7 +15,18 @@ import toch.nn.functional as F
 import torchvision.transform as T
 
 
-env = gym.make('CartPole-v0').unwrapped
+# 学習に使う変数を整理
+ENV = 'MountainCar-v0'
+# 報酬割引率
+GAMMA = 0.9
+# 1試行（1エピソード）の最大ステップ数
+MAX_STEP = 200
+# 最大試行回数（エピソード数）
+NUM_EPISODES = 10000
+# バッチサイズ32
+BATCH_SIZE = 64
+# キャパ
+CAPACITY = 10000
 
 # set up matplotlib
 is_ipython = 'inline' in matplotlib.get_backend()
