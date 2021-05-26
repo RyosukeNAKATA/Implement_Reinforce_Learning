@@ -15,7 +15,7 @@ import torch.optim as optim
 import torch.nn.functional as F
 import torchvision.transforms as T
 
-from save import save_as_gif
+from .. import save
 
 np.random.seed(283)
 
