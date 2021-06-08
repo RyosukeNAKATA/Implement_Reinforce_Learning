@@ -1,3 +1,5 @@
+.vim/
+*/log
 .DS_Store
 pyproject.toml
 poetry.lock
